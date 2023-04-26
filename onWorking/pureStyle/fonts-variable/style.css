@@ -1,0 +1,16 @@
+body{
+    background-color: black;
+}
+.container{
+    margin: auto;
+    margin-top: 100px;
+    text-align: center;
+    width: fit-content;
+    
+}
+.text-line{
+    font-variation-settings: "wght" 900;
+    color: rgb(157, 167, 49);
+    font-family: oswald;
+    font-size: 4em;
+}

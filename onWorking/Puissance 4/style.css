@@ -1,0 +1,197 @@
+body{
+    background-color: rgb(27, 34, 61);
+    /* margin-top: 0px; */
+}
+*{
+    box-shadow: border-box;
+    color: aliceblue;
+}
+
+/*______________ HEADER ______________*/
+/* __________________________________ */
+
+header{
+    display: block;
+    width: 100%;
+    height: 45px;
+    background-color: rgb(40, 56, 86);
+    padding-top: 15px;
+    margin: 0 0 5px 0;
+    /* border:2px solid black; */
+}
+.header_flex{
+    display: flex;
+    flex-direction: row;
+    /* border:1px solid rgb(211, 58, 58); */
+    padding: 5px 0 5px 0;
+}
+
+.header_flex a{
+    height: 20px;
+    /* border: 1px solid black; */
+    margin: 0 5px 0 5px;
+}
+.rt, .lt{
+    display: flex;
+    height: max-content;
+    width: 50%;
+    box-shadow: border-box;
+    /* border: 1px solid green; */
+    flex-direction: row;
+}
+.rt{
+    justify-content: flex-start;
+    padding-left: 2%;
+}
+.lt{
+    justify-content: flex-end;
+    padding-right: 2%;
+}
+
+/*_______________ MAIN_ASIDE _______________*/
+/* ________________________________________ */
+
+
+.main_aside_b{
+    display: block;
+    border: 2px solid black;
+}
+.main_aside_f{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    padding: 5px;
+    /* border: 1px solid red; */
+}
+aside{
+    width: 20%;
+    border: 2px solid black;
+}
+main{
+    width: 70%;
+    display: flex;
+    flex-direction: column;
+    padding: 10px;
+    border:2px solid black;
+}
+
+.pion_space,.game_space{
+    display: flex;
+    width: 100%;
+    flex-direction: row;
+    justify-content: center;
+    padding: 2px 0 2px 0;
+    margin: 2px 0 2px 0;
+    /* border: 2px solid black; */
+}
+.entry_container{
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: center;
+}
+
+.game_container{
+    display: flex;
+    height: 460px ;
+    width: 360px;
+    flex-direction: column-reverse;
+    flex-wrap: wrap;
+    /* border: 2px solid black; */
+}
+.box,.entry{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    
+    border-radius: 10%;
+    border: 1px solid black;
+    background-color: rgb(38, 44, 71);
+    padding: 3px;
+    width: 45px;
+    height: 45px;
+    margin: 2px 2px 2px 2px;
+    transform: scale(1);
+    transition-property: transform;
+    transition-duration: 300ms;
+}
+.entry:hover{
+    transform: scale(1.15);
+    border-color: aliceblue;
+}
+
+.pX, .pY{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    border-radius: 10%;
+    padding: 2px;
+    width: 44px;
+    height: 44px;
+    border: 1px solid black;
+    /* background-color: rgb(38, 44, 71); */
+}
+/* .game_space > .game_container > .box > .x:hover{
+    transition-property: transform;
+    transform: rotate(180deg);
+    transform-origin: -50% 50%;
+    transition-duration: 5s;
+} */
+.x,.y{
+    /* border-radius: 100%; */
+    border-radius: 100%;
+    width: 40px;
+    height: 40px;
+    border: 1px solid black;    
+}
+.pX div{
+    background-color:rgb(22, 45, 122);
+    position: absolute;
+    margin-top: 0px;
+}
+.pY div{
+    background-color:rgb(121, 24, 24);
+    position: absolute;
+    margin-top: 0px;
+}
+
+.game_space > .game_container > .box > .x { 
+    background-color: rgb(22, 45, 122) !important ;
+    z-index: 2;
+    margin: auto;
+}
+.game_space > .game_container > .box > .y { 
+    background-color: rgb(121, 24, 24) !important ;
+    z-index: 2;
+    margin: auto;
+}
+.game_space > .game_container > .entry > .x { 
+    background-color: rgb(22, 45, 122) !important ;
+    z-index: 2;
+    margin: auto;
+}
+.game_space > .game_container > .entry > .y { 
+    background-color: rgb(121, 24, 24) !important ;
+    z-index: 2;
+    margin: auto;
+}
+
+.game_space > .game_container > .box[data-placeholder]:not([data-placeholder=""]):empty::before {
+    content: attr(data-placeholder);
+}
+.game_space > .game_container > .entry[data-placeholder]:not([data-placeholder=""]):empty::before {
+    content: attr(data-placeholder);
+}
+
+
+
+footer{
+    display: block;
+    margin-top: 5px;
+    width: 100%;
+    height: 100px;
+    border: 2px solid black;
+    background-color: rgb(40, 56, 86);
+    
+    /* padding: 5px; */
+}

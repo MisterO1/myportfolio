@@ -1,0 +1,9 @@
+import xml.dom.minidom
+import urllib
+
+## On va ici simplement analyser un fichier xml disponible sur internet qui donne l'adresse IP 
+
+ipxml = xml.dom.minidom.parse(urllib.urlopen('http://www.showmyip.com/xml/'))
+myIP = ipxml.getElementsByTagName('ip')[0].childNodes[0].nodeValue
+print (myIP)
+

@@ -1,0 +1,13 @@
+Front-end /
+-build web site about a subject (food, sport, etc...) by using an API
+-contact page
+-landing page
+
+Back-end /
+-E-commerce site (payment, email sending,etc...) with security
+
+High visualisation on porfolio /
+
+games /
+simply games already exists
+chess, tic tac toe, awale, etc...
