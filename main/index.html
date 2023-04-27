@@ -1,47 +1,160 @@
 <!DOCTYPE html>
-<html>
-    <head>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=0">
-        <link rel="stylesheet" href="style.css" />
-        <!-- <link rel="icon" href="imgs/icon_img.png" sizes="16x16"/> -->
-        <title> MyPortfolio</title>
-    </head>
-    <body>
-        <main>
-            <div class="mid">
-                <div class="menu">
-                    <div class="well">
-                        <div class="wellcome">
-                            <h1>wellcome to my Portfolio</h1>
-                        </div>
-                        <div class="here">
-                            <p>Here are some realisations i made Take a look ✌️</p>
-                        </div>
-                    </div>
-                    <div class="realisations">
-                        <a href="Bouton_vert/Codes/index.html" >
-                            <div class="Bv">
-                                <p>Bouton vert</p>
-                            </div>
-                        </a>
-                        <a href="Carré chinoix/index.html" >
-                            <div class="p3">
-                                <p>Puissance 3</p>
-                            </div>
-                        </a>
-                        <a href="Puissance 4/index.html" >
-                            <div class="p4">
-                                <p>Puissance 4</p>
-                            </div>
-                        </a>
-                    </div>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- Boxicons -->
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+
+    <!-- my stylesheet -->
+    <link rel="stylesheet" href="style.css">
+    
+    <title>Olivier-Portfolio</title>
+</head>
+<body>
+    <header class="header">
+        <a href="#" class="logo">MyPortfolio</a>
+
+        <i class="bx bx-menu" id="menu-icon"></i>
+        <nav class="navbar">
+            <a href="#home" class="active">home</a>
+            <a href="#about" class="">about</a>
+            <a href="#services" class="services">services</a>
+            <a href="#projects" class="Projects">Projects</a>
+            <a href="#contact" class="">Contact</a>
+        </nav>
+    </header>
+
+    <!-- home section design -->
+    <section class="home" id="home">
+        <div class="home-content">
+            <h3>Hello, It's me</h3>
+            <h2>Olivier Kouassi</h2>
+            <h3>And I'm a <span>Front-end Developper</span></h3>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ullam consectetur, esse itaque blanditiis, animi fugit quasi laudantium similique, cumque obcaecati tenetur quibusdam distinctio aut ipsum veniam sapiente aspernatur consequuntur. Excepturi!</p>
+            <div class="social-media">
+                <a href="#"><i class="bx bxl-facebook"></i></a>
+                <a href="#"><i class="bx bxl-linkedin"></i></a>
+                <a href="#"><i class="bx bxl-instagram-alt"></i></a>
+            </div>
+            <a href="#" class="btn">Download my CV</a>
+        </div>
+        <div class="home-img">
+            <img src="imgs/photo1.png" alt="Photo du Developper">
+        </div>
+    </section>
+
+    <!-- about section design -->
+    <section class="about" id="about">
+        <div class="about-img">
+            <img src="imgs/photo1.png" alt="Photo du developpeur">
+        </div>
+        <div class="about-content">
+            <h2 class="heading">About <span>Me</span></h2>
+            <h3> Front-end Developper</h3>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. At omnis voluptate obcaecati, suscipit esse laudantium odit, ipsam voluptatem sed earum fuga delectus perferendis natus nemo molestias cum repellendus ullam autem!</p>
+            <a href="#" class="btn">Read more</a>
+        </div>
+    </section>
+
+    <!-- services section design -->
+    <section class="services" id="services">
+        <h2 class="heading"> Our <span>Services</span></h2>
+        <div class="services-container">
+            <div class="services-box">
+                <i class="bx bx-code-alt"></i>
+                <h3>Création Site web</h3>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. At omnis voluptate obcaecati, suscipit esse laudantium odit, ipsam voluptatem sed earum fuga delectus perferendis natus nemo molestias cum repellendus ullam autem!</p>
+                <a href="#" class="btn">Read more</a>
+            </div>
+            <div class="services-box">
+                <i class="bx bxs-paint"></i>
+                <h3>Graphic design</h3>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. At omnis voluptate obcaecati, suscipit esse laudantium odit, ipsam voluptatem sed earum fuga delectus perferendis natus nemo molestias cum repellendus ullam autem!</p>
+                <a href="#" class="btn">Read more</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- projects section design -->
+    <section class="projects" id="projects">
+        <h2 class="heading">Latest <span>Projects</span></h2>
+
+        <div class="projects-container">
+            <div class="projects-box">
+                <img src="imgs/project.jpg">
+                <div class="overlay">
+                    <h4>Web design 1</h4>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+                    <a href="#"><i class='bx bx-link-external'></i></a>
                 </div>
             </div>
-        </main>
-        <footer>
-            <p>©Copyright</p>
-        </footer>
-        <script src="main.js"></script>
-    </body>
+            <div class="projects-box">
+                <img src="imgs/project.jpg">
+                <div class="overlay">
+                    <h4>Web design 2</h4>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+                    <a href="#"><i class='bx bx-link-external'></i></a>
+                </div>
+            </div>
+            <div class="projects-box">
+                <img src="imgs/project.jpg">
+                <div class="overlay">
+                    <h4>Web design 3</h4>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+                    <a href="#"><i class='bx bx-link-external'></i></a>
+                </div>
+            </div>
+            <div class="projects-box">
+                <img src="imgs/project.jpg">
+                <div class="overlay">
+                    <h4>Web design 4</h4>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+                    <a href="#"><i class='bx bx-link-external'></i></a>
+                </div>
+            </div>
+            <div class="projects-box">
+                <img src="imgs/project.jpg">
+                <div class="overlay">
+                    <h4>Web design 5</h4>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+                    <a href="#"><i class='bx bx-link-external'></i></a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- contact section design -->
+    <section class="contact" id="contact">
+        <h2 class="heading">Contact <span>Me</span></h2>
+
+        <form action="#">
+            <div class="input-box">
+                <input type="text" placeholder="Full name">
+                <input type="email" placeholder="Email Address">
+            </div>
+            <div class="input-box">
+                <input type="number" placeholder="Mobile Number">
+                <input type="text" placeholder="Email subject">
+            </div>
+            <textarea name="" id="" cols="30" rows="10" placeholder="Your message"></textarea>
+            <input type="submit" value="Send message" class="btn">
+        </form>
+    </section>
+
+    <!-- footer section design -->
+    <footer>
+        <div class="footer-content">
+            <p>Copyright &COPY; 2023 by Oliver KOUASSI | All Rights Reserved.</p>
+        </div>
+        <div class="footer-iconTop">
+            <a href="#home"><i class="bx bx-up-arrow-alt"></i></a>
+        </div>
+    </footer>
+
+    <!-- Script Js -->
+    <script src="script.js"></script>
+</body>
 </html>
