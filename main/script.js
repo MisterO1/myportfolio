@@ -52,10 +52,10 @@ ScrollReveal().reveal(".home-content p, .about-content p",{origin: "right"});
 
 // typed animation text
 var typed = new Typed(".text-typed",{
-    strings: ["Front-end Developper","Web Designer","Youtuber 😁"],
+    strings: ["Bachelor Student","Front-end Developper","Youtuber 😁"],
     typeSpeed : 100,
     backSpeed : 100,
     backDelay : 1000,
-    typeDelay : 1000,
+    startDelay : 200,
     loop : true  // to repeat
 })
