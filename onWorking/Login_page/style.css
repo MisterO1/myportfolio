@@ -1,0 +1,247 @@
+*{
+    box-sizing: border-box;
+    font-family: cursive;
+    margin: 0;
+    padding: 0;
+}
+:root{
+    --main-color : #16251f ;
+    --second-color : #c4c1bd ;
+    --text-color : #ddfcfd;
+}
+body{
+    margin: 0;
+    padding: 0;
+
+    background-image: url(imgs/bg.jpeg);
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.header{
+    position: fixed;
+    top: 0;
+    width: 100%;
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.header h1{
+    font-size: 2rem;
+    margin-left: 2rem;
+}
+.header #menuIcon{
+    display: none;
+    font-size: 2rem;
+    color: var(--main-color);
+}
+.navbar{
+    display: flex;
+    align-items: center;
+    margin-right: 6rem;
+    font-size: 1.4rem;
+}
+.navbar a,
+.navbar button.btn{
+    color : var(--main-color);
+    text-decoration: none;
+    margin: .5rem 1rem;
+}
+.navbar a{
+    position: relative;
+    overflow: hidden;
+}
+.navbar a span{
+    position: absolute;
+    bottom: -1px;
+    display: block;
+    width: 100%;
+    border-top: 3px solid var(--main-color);
+    transform: translateX(-110%);
+    transition: .4s ease;
+}
+a:hover span{
+    transform: translateX(0%);
+}
+.navbar button.btn{
+    background: none;
+    font-size: 1.4rem;
+    border : 2px solid var(--main-color);
+    border-radius: 12px;
+    padding: .4rem 1rem;
+    cursor: pointer;
+    transition: border .3s ease;
+}
+.navbar button.btn:hover{
+    background-color: var(--main-color);
+    color: var(--text-color);
+}
+
+/* ---- login and signup face */
+main{
+    position: relative;
+    margin-top: 4rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    height: 62vh;
+    width: 100%;
+    /* border: 2px solid #c4c1bd; */
+}
+.wrapper{
+    position: relative;
+    align-items: center;
+    width: 350px;
+    height: fit-content;
+    margin: auto;
+    background-color: #0000000e;
+    backdrop-filter: blur(20px);
+    overflow: hidden;
+    border-radius: 0 12px;
+    display: flex;
+    scale: 0;
+    transition: .1s ease-in-out;
+}
+.wrapper.active{
+    scale: 1.55;
+}
+.form-box{
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border-radius: 0 12px;
+    box-shadow: 0 0 .2rem var(--main-color);
+    border: 1px solid #ffffff1d ;
+    width: 350px;
+    transition: .5s ease;
+}
+
+.login-box.inactive{
+    transform: translateX(-100%);
+}
+.register-box.active{
+    transform: translateX(0%);
+}
+
+.register-box{
+    /* display: none; */
+    position: absolute;
+    top: 0;
+    transform: translateX(100%);
+}
+.wrapper > div.close{
+    cursor: pointer;
+    position: absolute;
+    right: 0;
+    top: 0;
+    color: #fff;
+    font-size: 1.5rem;
+    padding: 0 3px;
+    border-radius: 0 12px;
+    background-color: var(--main-color);
+    z-index: 1;
+}
+form{
+    /* border: 2px solid black; */
+    width: 80%;
+}
+fieldset{
+    border: none;
+    display: flex;
+    flex-direction: column;
+}
+fieldset legend{
+    margin: auto;
+    font-size: 1.6rem;
+    font-weight: 700;
+    margin-bottom: 1rem;
+}
+.input-box{
+    /* background-color: #c4c1bd; */
+    padding: 5px;
+    position: relative;
+    width: 100%;
+}
+
+.input-box input{
+    margin-top: 1.2rem;
+    width: 100%;
+    border: none;
+    outline: none;
+    border-bottom: 2px solid var(--main-color);
+    background: none ;
+    font-weight: 600;
+    padding-right: 35px;
+}
+
+.input-box label{
+    position: absolute;
+    top: .5rem;
+    left: 8px;
+    font-size: .7rem;
+    transform: translate(3px,18px);
+    transition: .5s;
+}
+.input-box input:focus~label{
+    transform: translate(0,0);
+}
+
+.input-box i{
+    position: absolute;
+    right: .6rem;
+    top: 1.8rem;
+    font-size: .8rem;
+}
+
+.rf-bx{
+    display: flex;
+    justify-content: space-between;
+    /* gap: 2rem; */
+    font-size: .7rem;
+    margin: 10px 0;
+}
+.rf-bx .remember{
+    display: flex;
+    gap: 5px;
+}
+.rf-bx a{
+    text-decoration: none;
+    color: var(--main-color);
+}
+.rf-bx a:hover{
+    text-decoration: underline;
+}
+
+.submit-login{
+    width: 80%;
+    background-color: var(--main-color);
+    color: #fff;
+    margin: auto;
+    padding: 5px ;
+    border-radius: 5px;
+    border: none;
+    margin-bottom: .7rem;
+}
+.submit-login:hover{
+    opacity: .9;
+}
+
+.register,
+.login{
+    margin: auto;
+    font-size: .8rem;
+    margin-bottom: .7rem;
+}
+.register a,
+.login a{
+    text-decoration: none;
+    color: var(--main-color);
+    font-weight: 600;
+}
+.register a:hover,
+.login a:hover{
+    text-decoration: underline;
+}

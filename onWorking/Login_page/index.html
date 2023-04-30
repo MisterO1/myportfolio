@@ -4,9 +4,86 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Login</title>
+    <!-- box icons -->
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    
+    <!-- My Style -->
+    <link rel="stylesheet" href="style.css">
+    
+    <title>Login Page</title>
 </head>
 <body>
-    
+    <header class="header">
+        <h1 class="logo">Logo</h1>
+        <i class='bx bx-menu' id="menuIcon"></i>
+        <nav class="navbar">
+            <a href="#">home <span class="underline"></span></a>
+            <a href="#">about<span class="underline"></span></a>
+            <a href="#">services<span class="underline"></span></a>
+            <a href="#">contact<span class="underline"></span></a>
+            <button class="btn">Login</button>
+        </nav>
+    </header>
+
+    <main style="padding-top: 130px;">
+        <div class="wrapper">
+            <div class="close"><i class="bx bx-x" ></i></div>
+            <div class="form-box login-box">
+                <form action="">
+                    <fieldset>
+                        <legend>Login</legend>
+                        <div class="input-box">
+                            <input type="email" name="email">
+                            <label for="email">Email</label>
+                            <i class='bx bxs-envelope'></i>
+                        </div>
+                        <div class="input-box" >
+                            <input type="password" name="password">
+                            <label for="password">Password</label>
+                            <i class='bx bxs-lock-alt'></i>
+                        </div>
+                        <div class="rf-bx">
+                            <div class="remember">
+                                <input type="checkbox" name="remember" id="remember">
+                                <label for="remember">Remember</label>
+                            </div>
+                            <a href="" class="forgot">Forgot Password?</a>
+                        </div>
+                        <input type="submit" value="Login" class="submit-login">
+                        <p class="register">Don't have an account? <a href="#">Register</a></p>
+                    </fieldset> 
+                </form>
+            </div>
+            <div class="form-box register-box">
+                <form action="">
+                    <fieldset>
+                        <legend>Register</legend>
+                        <div class="input-box">
+                            <input type="email" name="email">
+                            <label for="email">Email</label>
+                            <i class='bx bxs-envelope'></i>
+                        </div>
+                        <div class="input-box" >
+                            <input type="password" name="password">
+                            <label for="password">Password</label>
+                            <i class='bx bxs-lock-alt'></i>
+                        </div>
+                        <div class="rf-bx">
+                            <div class="remember">
+                                <input type="checkbox" name="remember" id="remember">
+                                <label for="remember">Remember</label>
+                            </div>
+                            <a href="" class="forgot">Forgot Password?</a>
+                        </div>
+                        <input type="submit" value="Login" class="submit-login">
+                        <p class="login">Already have an account? <a href="#">Login</a></p>
+                    </fieldset> 
+                </form>
+            </div>
+        </div>
+        
+    </main>
+
+    <script src="script.js"></script>
 </body>
 </html>
