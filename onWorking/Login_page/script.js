@@ -7,10 +7,12 @@ const loginForm = document.querySelector('.login-box') ;
 btnRegister.addEventListener("click",() => {
     loginForm.classList.toggle("inactive")
     registerForm.classList.toggle("active")
+    wrapper.classList.toggle("switch")
 })
 btnLogin.addEventListener("click",() => {
     loginForm.classList.toggle("inactive")
     registerForm.classList.toggle("active")
+    wrapper.classList.toggle("switch")
 })
 
 // open and close wrapper via login button & close icon
@@ -19,9 +21,9 @@ const closeWrapper = document.querySelector(".wrapper > div.close");
 const wrapper = document.querySelector(".wrapper");
 
 btn.addEventListener("click",() => {
-    wrapper.classList.toggle("active")
+    wrapper.classList.toggle("open")
 })
 console.log(closeWrapper)
 closeWrapper.addEventListener("click",() => {
-    wrapper.classList.remove("active")
+    wrapper.classList.remove("open")
 })

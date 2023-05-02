@@ -16,6 +16,7 @@ body{
     background-image: url(imgs/bg.jpeg);
     background-size: cover;
     background-repeat: no-repeat;
+    overflow: hidden;
 }
 
 .header{
@@ -94,7 +95,6 @@ main{
     position: relative;
     align-items: center;
     width: 350px;
-    height: fit-content;
     margin: auto;
     background-color: #0000000e;
     backdrop-filter: blur(20px);
@@ -102,10 +102,14 @@ main{
     border-radius: 0 12px;
     display: flex;
     scale: 0;
-    transition: .1s ease-in-out;
+    transition: scale .1s ease-in-out;
+    transition: height .4s ease;
 }
-.wrapper.active{
-    scale: 1.55;
+.wrapper.open{
+    scale: 1.2;
+}
+.wrapper.switch{
+    height: 292px;
 }
 .form-box{
     position: relative;
@@ -201,7 +205,6 @@ fieldset legend{
     justify-content: space-between;
     /* gap: 2rem; */
     font-size: .7rem;
-    margin: 10px 0;
 }
 .rf-bx .remember{
     display: flex;
@@ -215,17 +218,18 @@ fieldset legend{
     text-decoration: underline;
 }
 
-.submit-login{
+.submit{
     width: 80%;
     background-color: var(--main-color);
     color: #fff;
     margin: auto;
+    margin-top: 20px;
     padding: 5px ;
     border-radius: 5px;
     border: none;
     margin-bottom: .7rem;
 }
-.submit-login:hover{
+.submit:hover{
     opacity: .9;
 }
 
