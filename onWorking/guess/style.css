@@ -1,0 +1,68 @@
+body {
+    background-color: black;
+    color: #fff;
+    font-family: Geneva, sans-serif;
+    display: flex;
+    justify-content: center;
+}
+.heading, section{
+    display: flex;
+    flex-direction: column;
+    position: relative;
+}
+section{
+    margin-top: 5rem;
+    padding: 15px;
+    width: 75%;
+    border: 2px solid #fff;
+}
+.heading{
+    position: relative;
+    border-bottom: 2px solid #fff;
+    margin-bottom: 3rem;
+    padding-bottom: 2rem;
+}
+.heading div:first-child {
+    display: flex;
+    justify-content: space-between;
+}
+.heading h1{
+    text-align: center;
+}
+.secretnumber{
+    text-align: center;
+    background-color: #fff;
+    color: #000;
+    width: fit-content;
+    padding: 5px 10px;
+    font-size: 1.3rem;
+    position: absolute;
+    left: 48%;
+    bottom: -16px;
+
+}
+
+.wrapper {
+    display: flex;
+    justify-content: space-around;
+}
+.wrapper div{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    width: 100px;
+}
+.wrapper div h3{
+    font-size: 10px;
+}
+
+.wrapper input{
+    height: 40px;
+    width: 90px;
+    margin-bottom: 1rem;
+}
+.wrapper button{
+    width: fit-content;
+    padding: 5px 10px;
+}

@@ -1,0 +1,139 @@
+*{
+    margin: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+    color: #fff;
+}
+:root{
+    --main-color : rgb(176, 58, 174);
+    --main-color-op : rgb(176, 58, 174, .4)
+}
+body{
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: linear-gradient(0deg, var(--main-color) 0%, rgb(55, 54, 21) 90%, .2) ;
+}
+section{
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    padding: 15px;
+    border-radius: 30px;
+    background-color: rgb(55, 54, 21);
+}
+section div{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.wrappers{
+    /* overflow-x: hidden; */
+    position: relative;
+    border: 2px solid rgb(207, 15, 15);
+    /* background-color: aqua; */
+}
+.wrappers .stopwatch{
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: rgb(40, 48, 48);
+}
+.wrappers .countdown{
+    position: absolute;
+    top: 0;
+    right: -50px;
+    width: 400px;
+    height: 400px;
+    background-color: rgb(34, 100, 100);
+}
+.stopwatch .chrono{
+    font-size: 4rem;
+    border: 15px solid var(--main-color-op);
+    width: 25rem;
+    height: 25rem;
+
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.buttons{
+    width: 25rem ;
+    gap: 1rem;
+    display: none;
+}
+.buttons.active{
+    display: flex;
+}
+.buttons button{
+    display: none;
+    color: #fff;
+    font-size: 1.5rem;
+    background-color: var(--main-color);
+    border: none;
+    border-radius: 10px;
+    padding: 10px 20px;
+    cursor: pointer;
+}
+.buttons button:active{
+    background-color: rgba(137, 43, 226, 0.258);
+}
+.buttons button.reset{
+    color: var(--main-color);
+    background-color: rgba(137, 43, 226, 0.258);
+}
+.buttons button.active{
+    display: block;
+}
+
+.options{
+    height: fit-content;
+    width: 25rem;
+    gap: 0;
+    background-color: rgb(58, 57, 32);
+    border-radius: 10px ;
+    border: 1px solid #535353;
+    /* opacity: .5; */
+    /* border: 2px solid black; */
+}
+.options .option{
+    color: #d9d9d9;
+    font-size: 1.2rem;
+    width: 50%;
+    min-height: 70px;
+    padding: 10px;
+    cursor: pointer;
+}
+.options :first-child{
+    border-right: 1px solid #535353;
+}
+.options .option.active{
+    color: var(--main-color);
+    background-color: rgba(137, 43, 226, 0.078);
+}
+
+.chronodown{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: .1rem;
+    font-size: 2rem;
+}
+.chronodown .digit_list{
+    display: flex;
+    flex-direction: column;
+    /* border: 1px solid #fff; */
+    padding: 5px 10px;
+    transform: translateY(-5px);
+}
+.chronodown > span {
+    overflow-y: scroll;
+    scroll-behavior: smooth;
+    background-color: #d9d9d9;
+    height: 35px;
+
+    transition: ease-in-out;
+}

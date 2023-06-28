@@ -1,0 +1,70 @@
+:root{
+    --ground-height : 5rem;
+    --gamespace-height : 33rem;
+}
+*{
+    box-sizing: border-box;
+}
+.gameSection{
+    display: block;
+    padding: 0;
+    margin: 3rem 0;
+}
+.gamespace{
+    width: 100%;
+    height: var(--gamespace-height);
+    /* background-color: rgb(87, 129, 184); */
+    background: linear-gradient(rgb(18, 122, 241), white);
+    position : relative;
+}
+.gamespace .bounce {
+    display: block;
+    width: 2rem;
+    height: 2rem;
+    background-color: rgb(92, 22, 55);
+    border-radius: 50%;
+    position: absolute;
+    bottom : var(--ground-height);
+    z-index: 100;
+}
+.gamespace .ground{
+    height: var(--ground-height);
+    width: 100%;
+    background-color: rgb(48, 42, 31);
+    position: absolute;
+    bottom: 0;
+    z-index: 200;
+}
+.gamespace .path{
+    position: absolute;
+    width: 100%;
+    height: calc(var(--gamespace-height)) ;
+    /* border: 2px solid black; */
+    bottom: 0;
+}
+.path .blocks{
+    position: absolute;
+    bottom: var(--ground-height);
+    width: 5rem;
+    height: 10rem;
+    background-color: rgb(21, 54, 21);
+    z-index: 100;
+}
+.path .blocks:nth-child(2){
+    left: 20rem;
+}.path .blocks:nth-child(3){
+    left: 30rem;
+    height: 5rem;
+}.path .blocks:nth-child(4){
+    left: 40rem;
+    height: 15rem;
+}.path .blocks:nth-child(5){
+    left: 50rem;
+    height: 4rem;
+}.path .blocks:nth-child(6){
+    left: 80rem;
+    height: 4rem;
+}.path .blocks:nth-child(7){
+    left: 96rem;
+    height: 4rem;
+}
