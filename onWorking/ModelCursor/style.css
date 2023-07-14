@@ -1,0 +1,66 @@
+:root{
+    --ground-height : 5rem;
+    --gamespace-height : 33rem;
+    --mouse-w : 25px;
+    --cursor-w : 25px;
+}
+*{
+    box-sizing: border-box;
+}
+body{
+    background-color: rgb(224, 221, 221);
+}
+
+nav{
+    display: flex;
+    padding: 10px 8px;
+    justify-content: center;
+    align-items: center;
+    background-color: aquamarine;
+}
+.wrapper{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+section{
+    display: flex;
+    border: 2px dashed black;
+    padding-left: 50px;
+    padding: 0;
+    margin-top: 10px;
+}
+.mouse-section{
+    width: 200px;
+    height: 100px;
+    
+}
+.cursor-section{
+    width: 600px;
+    height: 300px;
+}
+
+.mouse,.cursor{
+    position: relative;
+    top: 0px;
+    left: 0px;
+    display: block;
+    border-radius: 50%;
+    border: none;
+    
+}
+.mouse{
+    background-color: rgb(14, 65, 175);
+    width: var(--mouse-w);
+    height: var(--mouse-w);
+}
+.cursor{
+    background-color: rgb(72, 13, 211);
+    width: var(--cursor-w);
+    height: var(--cursor-w);
+}
+
+.hidden{
+    display: none;
+}

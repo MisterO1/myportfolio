@@ -16,7 +16,7 @@ checkBtn.addEventListener("click", ()=>{
         message.textContent = nbValue < secretNumber ? "too low" :"too high" ;
         score.textContent --
     } else {
-        message.textContent = "Correct Number"
+        message.textContent = "Correct Number !"
         secretNumberBox.textContent = secretNumber
         highScore.textContent = highScore.textContent < score.textContent ? score.textContent : highScore.textContent ;
         body.style.backgroundColor = "green"
